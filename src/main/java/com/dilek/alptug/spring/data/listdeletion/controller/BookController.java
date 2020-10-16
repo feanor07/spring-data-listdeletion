@@ -25,17 +25,19 @@ public class BookController {
     }
 
     @GetMapping("/books")
-    //  curl -X GET http://localhost:8080/books/
+    // curl -X GET http://localhost:8080/books
     public List<Book> fetchAllBooks() {
         return bookService.fetchAllBooks();
     }
 
     @DeleteMapping("books/aslist")
+    // curl -X DELETE http://localhost:8080/books/aslist
     public void deleteAllBooksAsList() {
         bookService.deleteAllBooksAsList();
     }
 
     @DeleteMapping("books/iteration")
+    // curl -X DELETE http://localhost:8080/books/iteration
     public void deleteAllBooksViaIteration() {
         bookService.deleteAllBooksViaIteration();
     }

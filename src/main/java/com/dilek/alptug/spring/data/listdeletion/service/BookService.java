@@ -32,7 +32,7 @@ public class BookService {
     public List<Book> fetchAllBooks() {
         return bookRepository.findAll();
     }
-    
+
     public void deleteAllBooksViaIteration() {
         for (Book book : bookRepository.findAll()) {
             bookRepository.delete(book);
