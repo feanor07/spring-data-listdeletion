@@ -11,11 +11,11 @@ Fetch all books available in table.
 call : `curl -X GET http://localhost:8080/books`
 
 ### Delete all books via repository.deleteAll
-Delets the books in table all together via repository method.
+Deletes the books in table all together via repository method.
 call: `curl -X DELETE http://localhost:8080/books/aslist`
 
 ### Delete all books via iteration
-Delets the books in table via for loop and calling repository `delete` one by one
+Deletes the books in table via for loop and calling repository `delete` one by one
 call: `curl -X DELETE http://localhost:8080/books/iteration`
 
 ## Testing
