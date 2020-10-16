@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS book;
+
+CREATE TABLE book (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  author VARCHAR(250) NOT NULL,
+  name VARCHAR(250) NOT NULL,
+  publish_year SMALLINT NOT NULL,
+  version int NOT NULL
+);
